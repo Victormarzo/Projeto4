@@ -1,10 +1,31 @@
 body{
     font-family: 'Roboto', sans-serif;
-    background: #E5E5E5;
-    width: 100%;
+    background: #EEF9BF;
+    
 }
 *{
     box-sizing: border-box;
+}
+.topo{
+    margin-top:40px;
+}
+h1{
+    font-size: 56px;
+    color: #75B79E;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    line-height: 65.63px;
+}
+.tabuleiro{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 970px;
+    min-height: 330px;
+    
 }
 .cartaMemoria{
     width: 117px;
@@ -18,6 +39,11 @@ body{
     position: relative;
     transform-style: preserve-3d;
     transition: .5s;
+    cursor:pointer;
+    margin-right:20px ;
+    
+    
+    
 }
 .front,
 .back{
