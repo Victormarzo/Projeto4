@@ -59,3 +59,12 @@ h1{
 .front{
     transform: rotateY(180deg);
   }
+
+  @media (max-width:614px){
+    .tabuleiro{
+        flex-direction: column;
+    }
+    .cartaMemoria{
+        margin-bottom: 35px;
+    }
+  }

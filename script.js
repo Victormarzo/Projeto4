@@ -2,7 +2,6 @@ let quantidade;
 let jogadas=0 ;
 let acertos =0;
 let frontParrot=["./images/bobrossparrot.gif","./images/explodyparrot.gif","./images/fiestaparrot.gif","./images/metalparrot.gif","./images/revertitparrot.gif","./images/tripletsparrot.gif","./images/unicornparrot.gif",]
-
 let arrayParrot=[];
 
 let cartaTemplate;
@@ -21,19 +20,14 @@ function giraCarta(elemento){
     if(primeiraCarta !== null){
         if(primeiraCarta!==elemento){
             elemento.classList.add("segunda");
-            elemento.classList.add("flip");
-            
-            
+            elemento.classList.add("flip");           
         }else{
             alert('Escolha cartas diferentes');
         }
-        
     }
     else {
     elemento.classList.add("primeira");
     elemento.classList.add("flip");
-    
-   
 }
 setTimeout(comparaCarta, 1000);
 }
@@ -46,12 +40,11 @@ function comparaCarta(){
         acertos=acertos +2;
         console.log(acertos,quantidade);
         if(acertos===Number(quantidade)){
-            alert(`Voce ganhou em ${jogadas} jogadas! PARABENS`);
+            alert(`Voce ganhou em ${jogadas} jogadas!`);
         }
     }else{
         primeiraCarta.classList.remove("flip");
-        segundaCarta.classList.remove("flip");
-        
+        segundaCarta.classList.remove("flip");   
     }
     primeiraCarta.classList.remove("primeira");
     segundaCarta.classList.remove("segunda");
@@ -76,15 +69,13 @@ function quantidadeCarta(){
         
         </div>
         `
-        arrayParrot.push(cartaTemplate);
-           
+        arrayParrot.push(cartaTemplate);     
     }
     arrayParrot.sort(comparador);
     for(let i=0;i<arrayParrot.length;i++){
         document.querySelector(".tabuleiro").innerHTML += arrayParrot[i];
     }
 }
-
 quantidadeCarta();
 
 
