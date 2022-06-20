@@ -38,7 +38,6 @@ function comparaCarta(){
         primeiraCarta.removeAttribute("onclick");
         segundaCarta.removeAttribute("onclick");
         acertos=acertos +2;
-        console.log(acertos,quantidade);
         if(acertos===Number(quantidade)){
             alert(`Voce ganhou em ${jogadas} jogadas!`);
         }

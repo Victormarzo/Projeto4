@@ -3,9 +3,7 @@ body{
     background: #EEF9BF;
     
 }
-*{
-    box-sizing: border-box;
-}
+
 .topo{
     margin-top:40px;
 }
@@ -66,5 +64,6 @@ h1{
     }
     .cartaMemoria{
         margin-bottom: 35px;
+        margin-right: 0;
     }
   }
